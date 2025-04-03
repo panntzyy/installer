@@ -102,7 +102,6 @@ show_progress() {
     echo -e "${GREEN}》 LOGS INSTALLER${RESET}"
     sleep 2
 }
-R)
 if [ ! -d "/var/www/pterodactyl" ]; then
   echo "Direktori pterodactyl_backup Tidak ada, silahlan hubungi Dev"
   exit
