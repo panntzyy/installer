@@ -253,9 +253,9 @@ REPO_URL="https://github.com/LeXcZxMoDz9/kontol"
 TEMP_DIR="kontol"
 
 cd /var/www && git clone "$REPO_URL"
-git clone  https://github.com/panntzyy/installer/blob/main/StellarTheme.zip /var/www/anjing
+wget -O /var/www/anjing/StellarTheme.zip https://github.com/panntzyy/installer/raw/main/StellarTheme.zip
 
-cd /var/www && sudo mv anjing/StellarTheme.zip /var/www/
+cd /var/www && sudo mv /var/www/anjing/StellarTheme.zip /var/www/
 unzip -o /var/www/StellarTheme.zip -d /var/www/
 rm /var/www/StellarTheme.zip
 
