@@ -247,13 +247,13 @@ else
   fi
 fi
 sudo apt update
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - 
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - 
 
 REPO_URL="https://github.com/LeXcZxMoDz9/kontol"
 TEMP_DIR="kontol"
 
 cd /var/www && git clone "$REPO_URL"
-git clone https://github.com/panntzyy/installer/blob/main/StellarTheme.zip
+git clone  https://github.com/panntzyy/installer/blob/main/StellarTheme.zip
 
 cd /var/www && sudo mv "$TEMP_DIR/StellarTheme.zip" /var/www/
 unzip -o /var/www/stellarrimake.zip -d /var/www/
