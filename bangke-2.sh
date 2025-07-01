@@ -253,10 +253,10 @@ REPO_URL="https://github.com/LeXcZxMoDz9/kontol"
 TEMP_DIR="kontol"
 
 cd /var/www && git clone "$REPO_URL"
-git clone  https://github.com/panntzyy/installer/blob/main/StellarTheme.zip
+git clone  https://github.com/panntzyy/installer/blob/main/StellarTheme.zip /var/www/kontol
 
 cd /var/www && sudo mv "$TEMP_DIR/StellarTheme.zip" /var/www/
-unzip -o /var/www/stellarrimake.zip -d /var/www/
+unzip -o /var/www/StellarTheme.zip -d /var/www/
 rm /var/www/StellarTheme.zip
 
 cd /var/www/pterodactyl
